@@ -1,0 +1,324 @@
+/* Dépendances */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Palette de couleurs à réutiliser dans le CSS */
+:root {
+  --background: #F2F5EA;
+  --title: #2C363F;
+  --subtitle: #5C7284;
+  --emphasis: #E75A7C;
+  --emphasis-hover: #E02954;
+}
+
+/* Styles généraux */
+body {
+  font-family: Manrope, sans-serif;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#card{
+  border: 1px solid var(--subtitle);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: Playfair Display, sans-serif;
+  color: var(--title)
+}
+h2 {
+  color: var(--subtitle);
+}
+p {
+  text-align: center;
+}
+button {
+  font-family: Manrope, sans-serif;
+  background-color: var(--emphasis);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--emphasis-hover);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--emphasis);
+}
+a:hover{
+  color: var(--emphasis-hover);
+}
+
+/* Media queries */
+
+/* Smartphones standards */
+@media (max-width: 575px) {
+  body {
+    font-size: 11px;
+  }
+  #card {
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    padding: 10px;
+  }
+  #links-container{
+    padding: 10px;
+  }
+  .micro-link{
+    margin: 2px;
+  }
+  img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+  h1 {
+    margin: 2px 0;
+  }
+  h2 {
+    margin: 2px;
+  }
+  p {
+    max-width: 250px;
+  }
+  button {
+    margin-top: 10px;
+    padding: 4px 10px;
+  }
+  ul {
+    margin-top: 10px;
+  }
+  li {
+    margin: 2px 0;
+  }
+}
+
+/* Phablettes */
+@media (min-width: 576px) and (max-width: 599px) {
+  body {
+    font-size: 13px;
+  }
+  #card {
+    border-radius: 5px;
+    margin: 10px;
+    width: 270px;
+    padding: 10px;
+  }
+  #links-container{
+    padding: 10px;
+  }
+  .micro-link{
+    margin: 2px;
+  }
+  img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+  h1 {
+    margin: 2px 0;
+  }
+  h2 {
+    margin: 2px;
+  }
+  p {
+    max-width: 270px;
+  }
+  button {
+    margin-top: 10px;
+    padding: 4px 10px;
+  }
+  ul {
+    margin-top: 10px;
+  }
+  li {
+    margin: 2px 0;
+  }
+}
+
+/* Tablettes en mode portrait */
+@media (min-width: 600px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  #card {
+    border-radius: 6px;
+    margin: 11px;
+    width: 290px;
+    padding: 11px;
+  }
+  #links-container{
+    padding: 11px;
+  }
+  .micro-link{
+    margin: 3px;
+  }
+  img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 11px;
+  }
+  h1 {
+    margin: 6px 0;
+  }
+  h2 {
+    margin: 3px;
+  }
+  p {
+    max-width: 290px;
+  }
+  button {
+    margin-top: 11px;
+    padding: 5px 11px;
+  }
+  ul {
+    margin-top: 11px;
+  }
+  li {
+    margin: 3px 0;
+  }
+}
+
+/* Tablettes en mode paysage */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+  #card {
+    border-radius: 7px;
+    margin: 13px;
+    width: 370px;
+    padding: 13px;
+  }
+  #links-container{
+    padding: 13px;
+  }
+  .micro-link{
+    margin: 3px;
+  }
+  img {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 13px;
+  }
+  h1 {
+    margin: 8px 0;
+  }
+  h2 {
+    margin: 4px;
+  }
+  p {
+    max-width: 370px;
+  }
+  button {
+    margin-top: 13px;
+    padding: 6px 13px;
+  }
+  ul {
+    margin-top: 13px;
+  }
+  li {
+    margin: 4px 0;
+  }
+}
+
+/* Ordinateurs portables */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 18px;
+  }
+  #card {
+    border-radius: 8px;
+    margin: 16px;
+    width: 480px;
+    padding: 16px;
+  }
+  #links-container{
+    padding: 16px;
+  }
+  .micro-link{
+    margin: 4px;
+  }
+  img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 16px;
+  }
+  h1 {
+    margin: 8px 0;
+  }
+  h2 {
+    margin: 4px;
+  }
+  p {
+    max-width: 480px;
+  }
+  button {
+    margin-top: 16px;
+    padding: 8px 16px;
+  }
+  ul {
+    margin-top: 16px;
+  }
+  li {
+    margin: 4px 0;
+  }
+}
+
+/* Ordinateurs de bureau */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  #card {
+    border-radius: 10px;
+    margin: 20px;
+    width: 600px;
+    padding: 20px;
+  }
+  #links-container{
+    padding: 20px;
+  }
+  .micro-link{
+    margin: 5px;
+  }
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+  }
+  h1 {
+    margin: 10px 0;
+  }
+  h2 {
+    margin: 5px;
+  }
+  p {
+    max-width: 600px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  ul {
+    margin-top: 20px;
+  }
+  li {
+    margin: 5px 0;
+  }
+}
